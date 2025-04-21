@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+            default: "Build your online presence, effortlessly."
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "string"
+            default: "Professional, responsive websites for small & medium businesses in Sarajevo."
