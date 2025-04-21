@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: jasnez/webly
+  branch: main
+  auth_scope: repo
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - label: "Hero Title"
+            name: "hero_title"
+            widget: "string"
+          - label: "Hero Subtitle"
+            name: "hero_subtitle"
+            widget: "string"
